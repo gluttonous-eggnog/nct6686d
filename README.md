@@ -105,8 +105,8 @@ intrusion0:       OK
 beep_enable:      disabled
 ```
 
-If you use the same motherboard (ASRock A620I Lighting WiFi) or feeling lucky your motherboard is
-somewhat similar, just copy the `sensors.d/A620I-Lighting-WiFi.conf` to `/etc/sensors.d` and you
+If you use the same motherboard (ASRock B650E PG-ITX WiFi) or if your motherboard uses the
+Nuvoton 6686D, just copy the `sensors.d/B650E_PG-ITX.conf` to `/etc/sensors.d` and you
 will get:
 
 ```
@@ -152,19 +152,21 @@ Just add nct6686 into /etc/modules
 
 ## Tested
 
-This module was tested on PVE 8.2.7 kernel version 6.5.13-6-pve on motherboard
-[A620I Lighting WiFi](https://pg.asrock.com/mb/AMD/A620I%20Lightning%20WiFi/index.asp).
+This module was tested on kernel version 6.18.0-cachyos on motherboard
+[B650E PG-ITX WiFi](https://pg.asrock.com/mb/AMD/B650E%20PG-ITX%20WiFi/index.asp).
 
 <br>
 
 ## Other motherboard supported
-Currently none.
+Asrock A620I Lighting WiFi
+Asrock B650E PG-ITX WiFi
 <br>
 
 ## CHANGELOG
 
 - Add support for A620I Lighting WiFi having NCT6686D
 - Support giving fan control back to the firmware
+- Small patch for new kernels to support for B650E PG-ITX WiFi having NCT6686D
 <br>
 
 ## MODULE PARAMETERS
