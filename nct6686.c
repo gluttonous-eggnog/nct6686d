@@ -1329,7 +1329,8 @@ static int nct6683_probe(struct platform_device *pdev)
 	return PTR_ERR_OR_ZERO(hwmon_dev);
 }
 
-static int nct6683_remove(struct platform_device *pdev)
+// Modified for newer kernels that expect this to return nothing
+static void nct6683_remove(struct platform_device *pdev)
 {
 	struct device *dev = &pdev->dev;
 	struct nct6683_data *data = dev_get_drvdata(dev);
@@ -1343,8 +1344,6 @@ static int nct6683_remove(struct platform_device *pdev)
 	}
 
 	mutex_unlock(&data->update_lock);
-
-	return 0;
 }
 
 static int nct6683_suspend(struct platform_device *pdev, pm_message_t state)
