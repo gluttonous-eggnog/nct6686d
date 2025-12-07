@@ -21,7 +21,7 @@ nct6683.
 #### .deb package
 - Clone this repository
 ```shell
-~$ git clone https://github.com/s25g5d4/nct6686d
+~$ git clone https://github.com/gluttonous-eggnog/nct6686d
 ~$ cd nct6686d
 ```
 - Build package
@@ -37,7 +37,7 @@ nct6683.
 #### .rpm package (akmod)
 - Clone this repository
 ```shell
-~$ git clone https://github.com/s25g5d4/nct6686d
+~$ git clone https://github.com/gluttonous-eggnog/nct6686d
 ~$ cd nct6686d
 ```
 - Build & install package
@@ -60,7 +60,7 @@ nct6683.
 
 #### Build with DKMS
 ```shell
-~$ git clone https://github.com/s25g5d4/nct6686d
+~$ git clone https://github.com/gluttonous-eggnog/nct6686d
 ~$ cd nct6686d
 ~$ make dkms/install
 ```
